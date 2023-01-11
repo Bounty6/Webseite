@@ -27,15 +27,168 @@
 <!-- Dropdownliste mit Themen hinzufügen -->
 <section>
   <h2>Wahrscheinlichkeitsberechnung</h2>
-  <p>Erklärung</p>
+  <p>Die Definition der Wahrscheinlichkeitsrechnung beruht auf drei grundlegenden Sätzen, sogenannten Axiomen, welche
+    Grundlage aller Sätze der Wahrscheinlichkeitsrechnung sind.</p>
+
+  <h3>Definition</h3>
+  <p>Die drei <b>Axiome</b> der Wahrscheinlichkeitsrechnung lauten: </p>
+  <ol>
+    <li>
+      Jedem Ereignis A ist eine konkrete Wahrscheinlichkeit P(A) zugeordnet, für die gilt: <br>
+      0 ≤ P(A) ≤ 1 <br>
+    </li>
+    <li>
+      Die Wahrscheinlichkeit, dass ein Ereignis in jedem Falle auftritt, ist 1.
+    </li>
+    <li>
+      Die Wahrscheinlichkeit, dass von zwei verschiedenen Ereignissen eins von beiden eintritt,
+      entspricht der Summe der jeweiligen Wahrscheinlichkeiten.<br>
+      P(A&#8321; &cup; A&#8322;) = P(A&#8321;) + P(A&#8322;)
+    </li>
+  </ol>
+
+  <h3>Begriffe</h3>
+  <p>
+    Zu den Grundbegriffen der Wahrscheinlichkeitsrechnung gehört das Zufallsexperiment, das Ergebnis sowie das
+    Ereignis und der Wahrscheinlichkeitsbegriff.
+  </p>
+  <table>
+    <tr>
+      <th>Begriffe</th>
+      <th>Definition</th>
+      <th>Beispiel</th>
+    </tr>
+    <tr>
+      <td>Zufallsexperiment</td>
+      <td>
+        Versuchsvorgang,
+        <ul>
+          <li>der einen genau festgelegten Plan zur Durchführung besitzt</li>
+          <li>bei dem bereits mögliche Ergebnisse des Experiments vorab bekannt sind</li>
+          <li>der nur Ergebnisse besitzt, die vorab nicht vorhergesagt werden können (Zufälligkeit).</li>
+        </ul>
+      </td>
+      <td>Münzwurf</td>
+    </tr>
+    <tr>
+    <td>Ergebnis und Ereignis</td>
+    <td>
+      <ul>
+        <li>
+          Ergebnisse oder Elementarereignisse sind die einzelnen möglichen Versuchsausgänge
+        </li>
+        <li>
+          Ereignisse sind Versuchsaufgänge, die aus mehreren Ergebnissen bestehen
+        </li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Mit einem Würfel wird die Zahl 1 gewürfelt. Das Ergebnis ist also 1.</li>
+        <li>Mit einem Würfel wird erst eine 2 und dann eine 5 gewürfelt. Das sind zwei verschiedene Ergebnisse, aber
+          zusammen betrachtet ist es immernoch ein Ergebnis, dass zuerst eine 2 und dann eine 5 gewürfelt wurde.</li>
+      </ul>
+    </td>
+  </tr>
+    <tr>
+      <td>Wahrscheinlichkeit und Gegenwahrscheinlichkeit</td>
+      <td>
+        <ul>
+          <li>
+            Die Wahrscheinlichkeit misst, wie häufig ein Ergebnis bei mehreren Wiederholungen eines Zufallsexperiments
+            eintritt
+          </li>
+          <li>
+            Die Gegenwahrscheinlichkeit misst, wie wahrscheinlich es ist, dass ein bestimmtes Ereignis nicht eintritt
+          </li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>
+            Die Wahrscheinlichkeit eine 1 mit einem 6-stelligen Würfel zu Würfeln steht 1 zu 6.
+          </li>
+          <li>
+            Die Gegenwahrscheinlichkeit dazu, also dass keine 1 gewürfelt wird, ist 5 zu 6.
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <p>
+    In einem Zufallsexperiment können verschiedene Versuchsausgänge, die sogenannten Elementarereignisse &omega;<sub>i</sub>
+    erreicht werden. Wenn Du einen oder mehrere davon zusammenfasst, erhältst Du ein Ereignis A des Zufallsexperiments.
+    Wiederum die Gesamtmenge aller Elementarereignisse wird als Ergebnismenge<br>
+    &Omega; = { &omega;&#8321; , ... , &omega;<sub>i</sub> }<br>
+    bezeichnet. Die Wahrscheinlichkeit P(A) beschreibt dann entsprechend, wie wahrscheinlich das jeweilige Ereignis
+    A auftritt.
+    <br>
+    <br>
+    Zu der Wahrscheinlichkeit P(A) solltest Du Dir folgende Eigenschaften merken: <br>
+  </p>
+  <ul>
+    <li>
+      Der Zahlenwert der Wahrscheinlichkeit P(A) liegt immer zwischen 0 und 1 <br>
+      <ul>
+        <li>
+          P(A) = 1 &rarr; Ereignis trifft zu 100 % zu.
+        </li>
+        <li>
+          P(A) = 0 &rarr; Ereignis trifft zu 0 % zu.
+        </li>
+      </ul>
+    </li>
+    <li>Wiederholst Du ein Zufallsexperiment oft genug, dann kann die Wahrscheinlichkeit P(A) über die relative
+      Häufigkeit h<sub>n</sub>(A) angegeben werden: <br> P(A) &asymp; h<sub>n</sub>(A)
+    </li>
+    <li>
+      Bei Laplace-Experimenten wird die Wahrscheinlichkeit P(A) über die Laplace-Regel berechnet: <br>
+      P(A) = <sup>|E|</sup>/<sub>|&omega;|</sub>
+    </li>
+  </ul>
+  <h4>Beispiel</h4>
+  <p>
+    Würfelst Du zum Beispiel mit einem sechsseitigen Würfel, dann hast Du eine Ergebnismenge &Omega; = {1, 2, 3, 4,
+    5, 6}. Ist es jetzt Dein Ziel eine 1 zu würfeln, dann ist Dein Ergebnis E = 1. Da es auf dem Würfel sechs Seiten
+    gibt und jede gleich wahrscheinlich ist, erhältst Du für die Wahrscheinlichkeit P(1) = &frac16;
+  </p>
+  <h2>Formelsammlung</h2> <!-- Als PDF-Download zur Verfügung stellen-->
+  <p>
+    Folgend kannst du dir die Formelsammlung zur Wahrscheinlichkeitsrechnung herunterladen!
+  </p>
 </section>
+
+
 <section>
-  <h2>Vorgemachte Übungsaufgabe</h2>
-  <p>Aufgabe + Lösung</p>
+  <h2>Übungsaufgabe</h2>
+  <p>
+    Hans und Johannes gehen in ein Casino und finden an einem Tisch ein Würfelspiel. Ziel ist es zu erraten, welche
+    Zahl man würfeln wird, bevor man wirft. Wenn man richtig liegt, kriegt man das 3-fache des Einsatzes. Falls
+    nicht, verliert man den Einsatz. <br>
+    Mit welcher Wahrscheinlichkeit errät Hans sein Ergebnis richtig?
+  </p>
+  <h3>Lösung:</h3>
+  <p>
+    Das Ergebnis besteht aus zwei Würfeln. Die Ergebnismenge geht von &omega;<sub>1</sub> - &omega;<sub>36</sub>. Somit
+    bildet sich die Menge <br> &Omega; = {11, 12, 13, 14, 15, 16, 21, 22, 23, 24, 25, 26, 31, 32, 33, 34, 35, 36,
+    41, 42, 43, 44, 45, 46, 51, 52, 53, 54, 55, 56, 61, 62, 63, 64, 65, 66}. <br>
+    Angenommen, Hans ratet auf die 7, so ist die Wahrscheinlichkeit der Ergebnismenge zu entnehmen, welche die
+    Augenzahl 7 hervorbringt. Das wären die Kombinationen <br>
+    {16, 25, 34, 43, 52, 61} welche insgesamt 6 Kombinationen sind<br>
+    Wenn wir damit die Formel anwenden, kommen wir auf die Wahrscheinlichkeit: <br>
+    P(7) = <br>
+    P(16 &cup; 25 &cup; 34 &cup; 43 &cup; 52 &cup; 61) = <br>
+    P(16) + P(25) + P(34) + P(43) + P(52) + P(61) = <br>
+    <sup>1</sup>/<sub>36</sub> + <sup>1</sup>/<sub>36</sub> + <sup>1</sup>/<sub>36</sub> + <sup>1</sup>/<sub>36</sub> +
+    <sup>1</sup>/<sub>36</sub> + <sup>1</sup>/<sub>36</sub> = <br> <sup>6</sup>/<sub>36</sub> = <br>
+    <sup>1</sup>/<sub>6</sub>
+  </p>
 </section>
+
 <section>
-  <h2>Interaktive Übungsaufgabe</h2>
-  <p>Aufgabe ohne Lösung</p>
+  <h2>Selbsttest</h2>
+  <p>Interaktive Aufgabe</p>
 </section>
 
 <aside>
